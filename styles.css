@@ -149,3 +149,27 @@ header h4 {
   font-size: 15px;
   letter-spacing: -1px;
 }
+
+.blog-body {
+  float: left;
+  width: 612px;
+  margin-left: 162px;
+  margin-right: 0;
+}
+
+.sidebar {
+  float: right;
+  width: 275px;
+  margin-left: 84px;
+  margin-right: 162px;
+}
+
+.blog::after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+.popular-posts {
+  align-content: center;
+}
