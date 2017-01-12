@@ -19,7 +19,7 @@ h1, h2, h3{
 
 header{
   position: relative; /* for absolute children */
-  background: #FFF url('http://www.stevensegallery.com/1200/800') no-repeat;
+  background: #FFF url('https://unsplash.it/1300/530') no-repeat;
   background-size: cover;
   height: 523px;
 }
