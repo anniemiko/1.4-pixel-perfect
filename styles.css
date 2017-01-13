@@ -166,10 +166,10 @@ header h4 {
   padding: 0;
 }
 
-ul i, li {
+.blog-links li {
   display: inline-block;
-  margin: 0;
-  text-align: center;
+  margin: 0px 10px 0px 0px;
+  align-items: center;
 }
 
 .blog-links li span {
@@ -185,7 +185,9 @@ ul i, li {
   color: #FFFFFF;
   padding: 8px;
   margin: 0;
+  vertical-align: middle;
 }
+
 .sidebar {
   float: right;
   width: 275px;
@@ -204,7 +206,6 @@ ul i, li {
   display: table;
   clear: both;
 }
-
 
 .box1 {
   display: inline-block;
@@ -229,6 +230,36 @@ ul i, li {
     float: left;
     width: 324px;
     }
+
+.posts-box{
+    position: relative;
+    transition: background-color 0.1s ease;
+    }
+
+.posts-box > div::after {
+    content: '';
+    display: block;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background-color: rgba(28, 107, 174, 0.5);
+    }
+
+.posts-box > div:hover::after {
+    display: none;
+    }
+
+.box1, .box2, .box3, .box4 {
+  position: relative;
+}
+
+.posts-box h1 {
+  position: absolute;
+  bottom: 0;
+  margin-bottom: 0;
+}
 
 .posts-box::after {
     content: "";
