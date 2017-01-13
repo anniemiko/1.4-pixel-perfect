@@ -160,6 +160,16 @@ header h4 {
 .blog-body img{
   border-radius: 100%;
   width: 22px;
+  vertical-align: middle;
+}
+
+.blog-body span {
+  color: #A6B7C3;
+  font-size: 10px;
+}
+
+.blog-body span.author {
+  color: #0069B7;
 }
 
 .blog-links{
@@ -201,39 +211,82 @@ header h4 {
   margin: 80px 97px 0px 97px;
 }
 
+h6 {
+  margin-top: 16px;
+  margin-bottom: 10px;
+  color: #0069B7;
+}
+
+
+.profile-links {
+  font-size: 10px;
+  color: #A6B7C3;
+  text-align: center;
+  padding: 0;
+}
+
+div .ad {
+  position: relative;
+}
+
+.ad-about{
+  font-size: 10px;
+  color: #A6B7C3;
+  position: absolute;
+  right: 0;
+}
+
+h5 {
+  color: #0069B6;
+  font-size: 16px;
+  font-family: 'Oswald';
+}
+
 .blog::after {
   content: "";
   display: table;
   clear: both;
 }
 
+.blog {
+  margin-bottom: 60px;
+}
+
+.popular-posts h1 {
+  font-size: 55px;
+  color: #003353;
+  text-align: center;
+}
+
 .box1 {
   display: inline-block;
   float: left;
-  width: 324px;
+  width: 25%;
   }
 
 .box2 {
   display: inline-block;
   float: left;
-  width: 324px;
+  width: 25%;
   }
 
 .box3 {
    display: inline-block;
    float: left;
-   width: 324px;
+   width: 25%;
    }
 
 .box4 {
     display: inline-block;
     float: left;
-    width: 324px;
+    width: 25%;
     }
 
 .posts-box{
     position: relative;
     transition: background-color 0.1s ease;
+    width: 100%;
+    overflow: hidden;
     }
 
 .posts-box > div::after {
@@ -251,14 +304,22 @@ header h4 {
     display: none;
     }
 
+.posts-box > div:hover > h1 {
+    color: white;
+    }
+
 .box1, .box2, .box3, .box4 {
   position: relative;
 }
 
 .posts-box h1 {
   position: absolute;
-  bottom: 0;
+  bottom: 0px;
+  left: 20px;
   margin-bottom: 0;
+  font-size: 36px;
+  text-align: left;
+  text-transform: uppercase;
 }
 
 .posts-box::after {
@@ -272,12 +333,6 @@ header h4 {
   color: #003353;
 }
 
-.popular-posts h1 {
-  font-size: 55px;
-  color: #003353;
-  text-align: center;
-}
-
 h6 {
   text-align: center;
 }
@@ -285,4 +340,12 @@ h6 {
 .profile-links li{
   display: inline;
   text-align: middle;
+}
+
+.popular-posts {
+  border-top: 1px solid lightgrey;
+}
+
+footer {
+  background-color: #003353;
 }
