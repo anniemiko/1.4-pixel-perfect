@@ -149,7 +149,7 @@ header h4 {
   font-size: 15px;
   letter-spacing: -1px;
 }
-
+/*blog section*/
 .blog-body {
   float: left;
   width: 612px;
@@ -165,11 +165,31 @@ header h4 {
 
 .blog-body span {
   color: #A6B7C3;
-  font-size: 10px;
+  font-size: 12px;
+  text-decoration: underline;
+  display: inline-block;
 }
 
 .blog-body span.author {
   color: #0069B7;
+}
+
+.blog-body span.date-time {
+  text-decoration: underline;;
+}
+
+.blog-body a{
+  color: #A0B3C0;
+}
+.article a:hover {
+    color: #0069B6;
+    }
+
+.inset-text {
+  font-size: 20px;
+  color: #0069B6;
+  border-left: 2px solid lightgrey;
+  padding-left: 17px;
 }
 
 .blog-links{
@@ -186,7 +206,7 @@ header h4 {
   background-color: #97A8B5;
   color: #FFFFFF;
   font-size: 10px;
-  padding: 9px 12px 9px 12px;
+  padding: 10px 12px;
   margin: 0;
 }
 
@@ -198,6 +218,14 @@ header h4 {
   vertical-align: middle;
 }
 
+.blog-links i:hover {
+  background-color: #003353;
+}
+.blog-links li span:hover {
+  background-color: #0069B5;
+}
+
+/*===========sidebar section*=========*/
 .sidebar {
   float: right;
   width: 275px;
@@ -205,11 +233,25 @@ header h4 {
   margin-right: 162px;
 }
 
+.profile-circle{
+  position: relative;
+}
 .profile-circle img{
   border-radius: 100%;
   width: 83px;
   margin: 80px 97px 0px 97px;
 }
+
+.profile-circle > img::after {
+    content: '';
+    display: block;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background-color: rgba(28, 107, 174, 0.5);
+    }
 
 h6 {
   margin-top: 16px;
@@ -227,13 +269,27 @@ h6 {
 
 div .ad {
   position: relative;
+  margin-top: 54px;
 }
 
-.ad-about{
+.ad-image img {
+    background: rgba(28, 107, 174, 0.5);
+    z-index: 10;
+    }
+
+p.ad-about {
+  margin-top: 0;
+}
+
+.ad-about a{
   font-size: 10px;
   color: #A6B7C3;
   position: absolute;
   right: 0;
+}
+
+.ad-about a:hover {
+  color: #0069B6;
 }
 
 h5 {
@@ -250,8 +306,38 @@ h5 {
 
 .blog {
   margin-bottom: 60px;
+
+}
+.blog-body h1 {
+  font-size: 55px;
+  color: #003353;
+  margin-bottom: 12px;
 }
 
+h6 {
+  text-align: center;
+}
+
+.profile-links li{
+  display: inline;
+  text-align: middle;
+  font-size: 12px;
+  margin-right: 16px;
+}
+
+.sidebar-text {
+  font-size: 11px;
+  color: #A0B3C0;
+}
+
+.sidebar-text a {
+  color: #A0B3C0;
+}
+.sidebar-text a:hover {
+    color: #0069B6;
+    }
+
+/*========bottom pop posts and box section========*/
 .popular-posts h1 {
   font-size: 55px;
   color: #003353;
@@ -328,24 +414,39 @@ h5 {
     clear: both;
   }
 
-.blog-body h1 {
-  font-size: 55px;
-  color: #003353;
-}
-
-h6 {
-  text-align: center;
-}
-
-.profile-links li{
-  display: inline;
-  text-align: middle;
-}
-
 .popular-posts {
   border-top: 1px solid lightgrey;
 }
 
 footer {
   background-color: #003353;
+  font-size: 12px;
+  position: relative;
+  padding: 40px 164px;
+}
+
+.copyright {
+  color: #A0B3C0;
+}
+
+.bottom-nav li {
+  color: #A0B3C0;
+  display: inline;
+  border-right: 1px solid #A0B3C0;
+  padding: 0px 8px;
+}
+
+.bottom-nav li:nth-child(4n) {
+  border-right: 0px;
+}
+
+footer > ul {
+  display: inline-block;
+  position: absolute;
+  right: 164px;
+  top: 54px;
+}
+
+footer > img {
+  vertical-align: middle;
 }
