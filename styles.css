@@ -150,34 +150,67 @@ header h4 {
   letter-spacing: -1px;
 }
 /*blog section*/
-.blog-body {
-  float: left;
-  width: 612px;
-  margin-left: 162px;
-  margin-right: 0;
+.blog-body h1 {
+  font-size: 61px;
+  color: #003353;
+  margin-bottom: 12px;
+  margin-top: 64px;
 }
 
-.blog-body img{
+.blog-body {
+  float: left;
+  width: 610px;
+  margin-left: 140px;
+  margin-right: 0;
+}
+.author-date div {
+    display: inline-block;
+}
+.author-date > div > img{
   border-radius: 100%;
   width: 22px;
   vertical-align: middle;
 }
 
-.blog-body span {
+.author-date > div::after {
+    content: '';
+    display: block;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background-color: rgba(28, 107, 174, 0.5);
+    border-radius: 100%;
+    width: 22px;
+    }
+
+.author-date span {
   color: #A6B7C3;
   font-size: 12px;
   text-decoration: underline;
   display: inline-block;
 }
 
-.blog-body span.author {
-  color: #0069B7;
+.author-date span.author {
+  color: #0069B6;
+  text-decoration: none;
+  margin-left: 7px;
+  margin-right: 18px;
 }
 
-.blog-body span.date-time {
-  text-decoration: underline;;
+.author-date span.date-time {
+  text-decoration: underline;
 }
 
+.article {
+  margin-top: 28px;
+}
+
+.article p {
+  color: #5C6870;
+  line-height: 1.5;
+}
 .blog-body a{
   color: #A0B3C0;
 }
@@ -186,10 +219,13 @@ header h4 {
     }
 
 .inset-text {
-  font-size: 20px;
+  font-size: 30px;
   color: #0069B6;
   border-left: 2px solid lightgrey;
   padding-left: 17px;
+  margin: 17px 0;
+  padding-top: 19px;
+  padding-bottom: 10px;
 }
 
 .blog-links{
@@ -205,23 +241,24 @@ header h4 {
 .blog-links li span {
   background-color: #97A8B5;
   color: #FFFFFF;
-  font-size: 10px;
-  padding: 10px 12px;
+  font-size: 12px;
+  padding: 9px 12px;
   margin: 0;
 }
 
 .blog-links i {
   background-color: #566168;
   color: #FFFFFF;
-  padding: 8px;
+  font-size: 16px;
+  padding: 9px;
   margin: 0;
   vertical-align: middle;
 }
 
-.blog-links i:hover {
+.blog-links li:hover > i{
   background-color: #003353;
 }
-.blog-links li span:hover {
+.blog-links li:hover > span {
   background-color: #0069B5;
 }
 
@@ -229,7 +266,7 @@ header h4 {
 .sidebar {
   float: right;
   width: 275px;
-  margin-left: 84px;
+  margin-left: 70px;
   margin-right: 162px;
 }
 
@@ -242,7 +279,7 @@ header h4 {
   margin: 80px 97px 0px 97px;
 }
 
-.profile-circle > img::after {
+.sidebar-top > div::after {
     content: '';
     display: block;
     position: absolute;
@@ -251,6 +288,9 @@ header h4 {
     left: 0;
     right: 0;
     background-color: rgba(28, 107, 174, 0.5);
+    border-radius: 100%;
+    width: 83px;
+    margin: 80px 97px 0px 97px;
     }
 
 h6 {
@@ -259,7 +299,6 @@ h6 {
   color: #0069B7;
 }
 
-
 .profile-links {
   font-size: 10px;
   color: #A6B7C3;
@@ -267,22 +306,31 @@ h6 {
   padding: 0;
 }
 
-div .ad {
+/*ad section*/
+
+.ad {
   position: relative;
   margin-top: 54px;
+  margin-bottom: 50px;
 }
 
-.ad-image img {
-    background: rgba(28, 107, 174, 0.5);
-    z-index: 10;
-    }
+.ad > div::after {
+    content: '';
+    display: block;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background-color: rgba(28, 107, 174, 0.5);
+}
 
 p.ad-about {
-  margin-top: 0;
+  margin-top: 6px;
 }
 
 .ad-about a{
-  font-size: 10px;
+  font-size: 13px;
   color: #A6B7C3;
   position: absolute;
   right: 0;
@@ -294,8 +342,10 @@ p.ad-about {
 
 h5 {
   color: #0069B6;
-  font-size: 16px;
+  font-size: 18px;
   font-family: 'Oswald';
+  margin-top: 70px;
+  margin-bottom: 15px;
 }
 
 .blog::after {
@@ -307,11 +357,6 @@ h5 {
 .blog {
   margin-bottom: 60px;
 
-}
-.blog-body h1 {
-  font-size: 55px;
-  color: #003353;
-  margin-bottom: 12px;
 }
 
 h6 {
@@ -326,8 +371,9 @@ h6 {
 }
 
 .sidebar-text {
-  font-size: 11px;
+  font-size: 13px;
   color: #A0B3C0;
+  line-height: 1.5;
 }
 
 .sidebar-text a {
@@ -339,7 +385,7 @@ h6 {
 
 /*========bottom pop posts and box section========*/
 .popular-posts h1 {
-  font-size: 55px;
+  font-size: 58px;
   color: #003353;
   text-align: center;
 }
@@ -402,8 +448,8 @@ h6 {
   position: absolute;
   bottom: 0px;
   left: 20px;
-  margin-bottom: 0;
-  font-size: 36px;
+  margin-bottom: 10;
+  font-size: 29px;
   text-align: left;
   text-transform: uppercase;
 }
