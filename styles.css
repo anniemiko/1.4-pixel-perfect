@@ -164,8 +164,10 @@ header h4 {
   margin-right: 0;
 }
 .author-date div {
+    position: relative;
     display: inline-block;
 }
+
 .author-date > div > img{
   border-radius: 100%;
   width: 22px;
@@ -314,6 +316,10 @@ h6 {
   margin-bottom: 50px;
 }
 
+.ad-image {
+  height: 300px;
+}
+
 .ad > div::after {
     content: '';
     display: block;
@@ -355,7 +361,7 @@ h5 {
 }
 
 .blog {
-  margin-bottom: 60px;
+  margin-bottom: 50px;
 
 }
 
@@ -419,6 +425,7 @@ h6 {
     transition: background-color 0.1s ease;
     width: 100%;
     overflow: hidden;
+    height: 324px;
     }
 
 .posts-box > div::after {
