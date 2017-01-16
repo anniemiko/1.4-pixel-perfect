@@ -190,7 +190,6 @@ header h4 {
 .author-date span {
   color: #A6B7C3;
   font-size: 12px;
-  text-decoration: underline;
   display: inline-block;
 }
 
@@ -201,7 +200,7 @@ header h4 {
   margin-right: 18px;
 }
 
-.author-date span.date-time {
+.date-time {
   text-decoration: underline;
 }
 
