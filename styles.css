@@ -231,6 +231,7 @@ header h4 {
 
 .blog-links{
   padding: 0;
+  overflow: hidden;
 }
 
 .blog-links li {
@@ -258,9 +259,11 @@ header h4 {
 
 .blog-links li:hover > i{
   background-color: #003353;
+  cursor: pointer;
 }
 .blog-links li:hover > span {
   background-color: #0069B5;
+  cursor: pointer;
 }
 
 /*===========sidebar section*=========*/
